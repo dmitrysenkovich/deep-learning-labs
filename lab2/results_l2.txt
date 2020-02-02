@@ -1,0 +1,24 @@
+l is 1e-10
+SGD validation accuracy: 0.8845
+SGD test accuracy: 0.9508718
+l is 1e-09
+SGD validation accuracy: 0.8857
+SGD test accuracy: 0.9502687
+l is 1e-08
+SGD validation accuracy: 0.8897
+SGD test accuracy: 0.9482399
+l is 1e-07
+SGD validation accuracy: 0.8917
+SGD test accuracy: 0.9493365
+l is 1e-06
+SGD validation accuracy: 0.8839
+SGD test accuracy: 0.9521329
+l is 1e-05
+SGD validation accuracy: 0.8837
+SGD test accuracy: 0.94736266
+l is 0.0001
+SGD validation accuracy: 0.8944
+SGD test accuracy: 0.95202327
+l is 0.001
+SGD validation accuracy: 0.8895
+SGD test accuracy: 0.9497204

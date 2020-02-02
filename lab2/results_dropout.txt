@@ -1,0 +1,18 @@
+rate is 0.01
+SGD validation accuracy: 0.887
+SGD test accuracy: 0.9485141
+rate is 0.05
+SGD validation accuracy: 0.8957
+SGD test accuracy: 0.95388746
+rate is 0.1
+SGD validation accuracy: 0.8935
+SGD test accuracy: 0.952736
+rate is 0.2
+SGD validation accuracy: 0.8862
+SGD test accuracy: 0.9486238
+rate is 0.3
+SGD validation accuracy: 0.8795
+SGD test accuracy: 0.94500494
+rate is 0.4
+SGD validation accuracy: 0.8602
+SGD test accuracy: 0.93327117

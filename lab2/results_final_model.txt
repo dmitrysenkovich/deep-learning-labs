@@ -1,0 +1,21 @@
+initial learning rate 0.01
+learning rate decay 0.0002
+momentum 0.95
+dropout rate 0.05
+epochs 50
+SGD validation accuracy: 0.8887
+SGD test accuracy: 0.95295537
+initial learning rate 0.01
+learning rate decay 0.0001
+momentum 0.95
+dropout rate 0.05
+epochs 100
+SGD validation accuracy: 0.896
+SGD test accuracy: 0.953723
+initial learning rate 0.01
+learning rate decay 0.0001
+momentum 0.95
+dropout rate 0.05
+epochs 200
+SGD validation accuracy: 0.894
+SGD test accuracy: 0.9568483
