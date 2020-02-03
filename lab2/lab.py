@@ -1,14 +1,10 @@
 import os
 import random
 
-import matplotlib.pyplot as plt
 import numpy as np
 from skimage import io
-from sklearn import linear_model
-from sklearn import metrics
-from ttictoc import TicToc
 from tensorflow import keras
-from keras import regularizers
+from ttictoc import TicToc
 
 LARGE_DATASET_NAME = 'notMNIST_large/'
 SMALL_DATASET_NAME = 'notMNIST_small/'
@@ -135,7 +131,7 @@ if __name__ == "__main__":
     large_dataset_images, small_dataset_images = read_data()
 
     # ------------------- SGD without L2 --------------------
-    # SGD 50 epochs accuracy 0.9507073
+    # SGD 50 epochs accuracy 0.94911724
     # model = keras.Sequential([
     # 	keras.layers.Dense(100, activation='relu'),
     # 	keras.layers.Dense(100, activation='relu'),
@@ -198,62 +194,33 @@ if __name__ == "__main__":
 
 
 
-    # ------------------- SGD with dropout --------------------
-    # for rate in [0.01]:
-    # 	model = keras.Sequential([
-    # 		keras.layers.Dense(100, activation='relu'),
-    # 		keras.layers.Dropout(rate),
-    # 		keras.layers.Dense(100, activation='relu'),
-    # 		keras.layers.Dropout(rate),
-    # 		keras.layers.Dense(100, activation='relu'),
-    # 		keras.layers.Dropout(rate),
-    # 		keras.layers.Dense(100, activation='relu'),
-    # 		keras.layers.Dropout(rate),
-    # 		keras.layers.Dense(100, activation='relu'),
-    # 		keras.layers.Dropout(rate),
-    # 		keras.layers.Dense(10, activation='softmax')
-    # 	])
-    # 	print('rate is %s' % rate, file=open("results_dropout.txt", "a"))
-    # 	model.compile(optimizer='SGD', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
-    # 	print('SGD validation accuracy: %s' % train_and_compare_with_validation(200000, 10000, large_dataset_images, model), file=open("results_dropout.txt", "a"))
-    # 	x_test, y_test = build_test_set(small_dataset_images)
-    # 	test_loss, test_acc = model.evaluate(x_test, y_test, verbose=2)
-    # 	print('SGD test accuracy: %s' % test_acc, file=open("results_dropout.txt", "a"))
-    # ------------------- SGD with dropout --------------------
-
-
-
-
     # ------------------- SGD with learning rate decay --------------------
-    # learning_rate = 0.01
-    # decay_rate = learning_rate / EPOCHS_NUMBER
-    # momentum = 0.95
-    # model = keras.Sequential([
-    # 	keras.layers.Dense(100, activation='relu'),
-    # 	keras.layers.Dense(100, activation='relu'),
-    # 	keras.layers.Dense(100, activation='relu'),
-    # 	keras.layers.Dense(100, activation='relu'),
-    # 	keras.layers.Dense(100, activation='relu'),
-    # 	keras.layers.Dense(10, activation='softmax')
-    # ])
-    # print('initial learning rate %s' % learning_rate)
-    # print('learning rate decay %s' % decay_rate)
-    # print('momentum %s' % momentum)
-    # sgd = keras.optimizers.SGD(lr=learning_rate, decay=decay_rate, momentum=momentum, nesterov=False)
-    # model.compile(optimizer=sgd, loss='sparse_categorical_crossentropy', metrics=['accuracy'])
-    # print('SGD validation accuracy: %s' % train_and_compare_with_validation(200000, 10000, large_dataset_images, model), file=open("results_learning_rate_decay.txt", "a"))
-    # x_test, y_test = build_test_set(small_dataset_images)
-    # test_loss, test_acc = model.evaluate(x_test, y_test, verbose=2)
-    # print('SGD test accuracy: %s' % test_acc, file=open("results_learning_rate_decay.txt", "a"))
+    # for decay_rate in [0.1, 0.01, 0.001, 0.0001]:
+    #     learning_rate = 0.1
+    #     model = keras.Sequential([
+    #         keras.layers.Dense(100, activation='relu'),
+    #         keras.layers.Dense(100, activation='relu'),
+    #         keras.layers.Dense(100, activation='relu'),
+    #         keras.layers.Dense(100, activation='relu'),
+    #         keras.layers.Dense(100, activation='relu'),
+    #         keras.layers.Dense(10, activation='softmax')
+    #     ])
+    #     print('initial learning rate %s' % learning_rate, file=open("results_learning_rate_decay.txt", "a"))
+    #     print('learning rate decay %s' % decay_rate, file=open("results_learning_rate_decay.txt", "a"))
+    #     sgd = keras.optimizers.SGD(lr=learning_rate, decay=decay_rate)
+    #     model.compile(optimizer=sgd, loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+    #     print('SGD validation accuracy: %s' % train_and_compare_with_validation(200000, 10000, large_dataset_images, model), file=open("results_learning_rate_decay.txt", "a"))
+    #     x_test, y_test = build_test_set(small_dataset_images)
+    #     test_loss, test_acc = model.evaluate(x_test, y_test, verbose=2)
+    #     print('SGD test accuracy: %s' % test_acc, file=open("results_learning_rate_decay.txt", "a"))
     # ------------------- SGD with learning rate decay --------------------
 
 
 
 
     # ------------------- final model --------------------
-    learning_rate = 0.01
-    decay_rate = learning_rate*2 / EPOCHS_NUMBER
-    momentum = 0.95
+    learning_rate = 0.1
+    decay_rate = 0.0001
     dropout_rate = 0.05
     model = keras.Sequential([
         keras.layers.Dense(100, activation='relu'),
@@ -270,9 +237,8 @@ if __name__ == "__main__":
     ])
     print('initial learning rate %s' % learning_rate, file=open("results_final_model.txt", "a"))
     print('learning rate decay %s' % decay_rate, file=open("results_final_model.txt", "a"))
-    print('momentum %s' % momentum, file=open("results_final_model.txt", "a"))
     print('dropout rate %s' % dropout_rate, file=open("results_final_model.txt", "a"))
-    sgd = keras.optimizers.SGD(lr=learning_rate, decay=decay_rate, momentum=momentum, nesterov=False)
+    sgd = keras.optimizers.SGD(lr=learning_rate, decay=decay_rate)
     model.compile(optimizer=sgd, loss='sparse_categorical_crossentropy', metrics=['accuracy'])
     print('SGD validation accuracy: %s' % train_and_compare_with_validation(200000, 10000, large_dataset_images, model), file=open("results_final_model.txt", "a"))
     x_test, y_test = build_test_set(small_dataset_images)

@@ -1,15 +1,16 @@
-initial learning rate 0.01
-learning rate decay 0.0002
-momentum 0.8
-SGD validation accuracy: 0.873
-SGD test accuracy: 0.9415506
-initial learning rate 0.01
-learning rate decay 0.0002
-momentum 0.9
-SGD validation accuracy: 0.8814
-SGD test accuracy: 0.9505428
-initial learning rate 0.01
-learning rate decay 0.0002
-momentum 0.95
-SGD validation accuracy: 0.8899
-SGD test accuracy: 0.9513653
+initial learning rate 0.1
+learning rate decay 0.1
+SGD validation accuracy: 0.7907
+SGD test accuracy: 0.8800307
+initial learning rate 0.1
+learning rate decay 0.01
+SGD validation accuracy: 0.8406
+SGD test accuracy: 0.91578025
+initial learning rate 0.1
+learning rate decay 0.001
+SGD validation accuracy: 0.8766
+SGD test accuracy: 0.9451146
+initial learning rate 0.1
+learning rate decay 0.0001
+SGD validation accuracy: 0.8833
+SGD test accuracy: 0.9490076

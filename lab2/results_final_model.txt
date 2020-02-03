@@ -19,3 +19,18 @@ dropout rate 0.05
 epochs 200
 SGD validation accuracy: 0.894
 SGD test accuracy: 0.9568483
+initial learning rate 0.1
+learning rate decay 0.0001
+dropout rate 0.05
+SGD validation accuracy: 0.8918
+SGD test accuracy: 0.9546551
+initial learning rate 0.1
+learning rate decay 0.0001
+dropout rate 0.05
+SGD validation accuracy: 0.897
+SGD test accuracy: 0.9547648
+initial learning rate 0.1
+learning rate decay 0.0001
+dropout rate 0.05
+SGD validation accuracy: 0.896
+SGD test accuracy: 0.9551486
