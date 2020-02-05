@@ -1,0 +1,4 @@
+Adam validation accuracy: 0.8962
+Adam test accuracy: 0.9590964
+Adam validation accuracy: 0.8982
+Adam test accuracy: 0.95717734
