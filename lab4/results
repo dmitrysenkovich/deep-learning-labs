@@ -1,0 +1,44 @@
+image.open.'LA' - 10 epochs 0.07 acc, loss ~2.6
+rgb2gray - 10 epochs 0.36 acc, loss ~1.27
+rgb2gray - 50 epochs 0.321 acc, loss ~0.25
+rgb2gray - 10 epochs 0.296 acc, loss ~1.37, 6m, more neurons
+rgb2gray - 10 epochs 0.31 acc, loss ~1.44, 5.16m, more neurons, 2x128 dense layers
+rgb2gray - 10 epochs 0.38 acc, loss ~1.42, 5.26m, more neurons, 2x256 dense layers
+rgb2gray - 10 epochs 0.32 acc, loss ~2.05, 6.07m, more neurons, 2x512 dense layers
+rgb2gray - 10 epochs 0.45 acc, loss ~1.25, 5.8m, more neurons, 2x512 dense layers with relu and he_kernel
+rgb2gray - 10 epochs 0.47 acc, loss ~1.02, 5.68m, more neurons, 2x512 dense layers with relu and he_kernel, filter 5x5
+rgb2gray - 20 epochs 0.48 acc, loss ~0.45, 10.88m, more neurons, 2x512 dense layers with relu and he_kernel, filter 5x5
+rgb2gray - 60 epochs 0.5 acc, loss ~0.176, 33.14m, more neurons, 2x512 dense layers with relu and he_kernel, filter 5x5
+rgb2gray - 10 epochs 0.479 acc, loss ~1.1030, 5.52m, more neurons, 2x512 dense layers with relu and he_kernel, filter 5x5, 0.3 dropout
+rgb2gray - 10 epochs 0.46 acc, loss ~0.9061, 6.07m, more neurons, 2x512 dense layers with relu and he_kernel, filter 5x5, 0.4 dropout
+rgb2gray - 20 epochs 0.476 acc, loss ~0.4976, 15.52m, more neurons, 2x512 dense layers with relu and he_kernel, filter 5x5, 0.4 dropout
+rgb2gray - 10 epochs 0.399 acc, loss ~3.45, 7.85m, more neurons, 2x512 dense layers with relu and he_kernel, filter 5x5, 0.4 dropout + dense dropout 0.1
+rgb2gray - 15 epochs 0.43 acc, loss ~2.87, 12.73m, more neurons, 2x512 dense layers with relu and he_kernel, filter 5x5, 0.4 dropout + dense dropout 0.1
+rgb2gray - 25 epochs 0.509 acc, loss ~2.1987, 14.8m, more neurons, 2x512 dense layers with relu and he_kernel, filter 5x5, 0.4 dropout + dense dropout 0.1
+rgb2gray - 40 epochs 0.52 acc, loss ~1.4991, 34.16m, more neurons, 2x512 dense layers with relu and he_kernel, filter 5x5, 0.4 dropout + dense dropout 0.1
+rgb2gray - 40 epochs 0.49 acc, loss ~0.9061, 31.39m, more neurons, 2x512 dense layers with relu and he_kernel, filter 5x5, 0.4 dropout
+rgb2gray - 40 epochs 0.55 acc, loss ~0.7898, 48.03m, more neurons, 2x1024 dense layers with relu and he_kernel, filter 5x5, 0.4 dropout + dense dropout 0.1
+rgb2gray - 150 epochs 0.54 acc, loss ~1.4359, 236.59m, more neurons, 2x1300 dense layers with relu and he_kernel, filter 5x5, 0.4 dropout + dense dropout 0.3
+google collab, - 50 epochs 0.558 acc, loss ~1.2159, 3.31m, 3x1024 dense layers with relu and he_kernel, filter 5x5, 0.3 dropout + dense dropout 0.25
+google collab, - 50 epochs 0.533 acc, loss ~1.88, 2.95m, 5x1024 dense layers with relu and he_kernel, filter 5x5, 0.3 dropout + dense dropout 0.25
+google collab, - 1000 epochs 0.59 acc, loss ~0.429, 61.86m, 2x1400 dense layers with relu and he_kernel, filter 5x5, 0.4 dropout + dense dropout 0.25
+google collab, - 50 epochs 0.534 acc, loss ~2.13, 3.05m, 5x1024 dense layers with relu and he_kernel, filter 5x5, 0.4 dropout + dense dropout 0.25
+google collab, - 50 epochs 0.537 acc, loss ~2.11, 3.07m, 5x1024 dense layers with relu and he_kernel, filter 5x5, 0.3 dropout + dense dropout 0.25, 8x192 layers
+google collab, - 50 epochs 0.51 acc, loss ~2.5, 4.14m, 5x1024 dense layers with relu and he_kernel, filter 5x5, 0.3 dropout + dense dropout 0.25, 224-288 layers
+google collab, - 500 epochs 0.579 acc, loss ~0.17, 26.51m, 3x1024 dense layers with relu and he_kernel, filter 5x5, 0.3 dropout + dense dropout 0.25
+google collab, - 50 epochs 0.49 acc, loss ~2.4, 4.06m, 3x1024 dense layers with relu and he_kernel, filter 5x5, 0.3 dropout + dense dropout 0.25, 224-288 layers
+google collab, - 50 epochs 0.52 acc, loss ~2.03, 2.07m, 3x1024 dense layers with relu and he_kernel, filter 5x5, 0.3 dropout + dense dropout 0.25, 256*8 in fit
+google collab, - 50 epochs 0.51 acc, loss ~1.94, 2.07m, 3x1024 dense layers with relu and he_kernel, filter 5x5, 0.3 dropout + dense dropout 0.25, 512*8 in fit
+google collab, - 1000 epochs 0.576 acc, loss ~0.16, 26.78m, 3x1024 dense layers with relu and he_kernel, filter 5x5, 0.3 dropout + dense dropout 0.25, 512*8 in fit
+google collab, - 1000 epochs 0.588 acc, loss ~0.16, 27.69m, 5x1024 dense layers with relu and he_kernel, filter 5x5, 0.3 dropout + dense dropout 0.25, 512*8 in fit
+google collab, - 2000 epochs 0.563 acc, loss ~0.0381, 52.47m, 2x1024 dense layers with relu and he_kernel, filter 5x5, 0.3 dropout + dense dropout 0.25, 512*8 in fit
+google collab, - 1000 epochs 0.591 acc, loss ~0.19, 27.72m, 2x1024 dense layers with relu and he_kernel, filter 7x7, 0.3 dropout + dense dropout 0.25, 512*8 in fit
+google collab, - 1000 epochs 0.6075 acc, loss ~0.19, 27.72m, 2x1024 dense layers with relu and he_kernel, filter 9x9, 0.3 dropout + dense dropout 0.25, 512*8 in fit
+google collab, - 1000 epochs 0.613 acc, loss ~0.14, 29.81m, 2x1024 dense layers with relu and he_kernel, filter 11x11, 0.3 dropout + dense dropout 0.25, 512*8 in fit
+google collab, - 2000 epochs 0.616 acc, loss ~0.0417, 55.12m, 2x1024 dense layers with relu and he_kernel, filter 9x9, 0.3 dropout + dense dropout 0.25, 512*8 in fit
+google collab, - 1000 epochs 0.655 acc, loss ~0.09, 37.45m, 2x1024 dense layers with relu and he_kernel, filter 21x21, 0.3 dropout + dense dropout 0.25, 512*8 in fit
+google collab, - 100 epochs 0.06 acc, loss ~11.8, 5.97m, 2x1024 dense layers with relu and he_kernel, filter 51x51, 0.3 dropout + dense dropout 0.25, 512*8 in fit
+google collab, - 1000 epochs 0.659 acc, loss ~0.18, 57.6m, 2x1024 dense layers with relu and he_kernel, filter 31x31, 0.3 dropout + dense dropout 0.25, 512*8 in fit
+google collab, - 1000 epochs 0.55 acc, loss ~2.15, 111.64m, 2x1024 dense layers with relu and he_kernel, filter 51x51, 0.3 dropout + dense dropout 0.25, 512*8 in fit
+google collab, - 1000 epochs 0.651 acc, loss ~0.38, 83.21m, 2x1024 dense layers with relu and he_kernel, filter 41x41, 0.3 dropout + dense dropout 0.25, 512*8 in fit
+google collab, - 2000 epochs 0.656 acc, loss ~0.05, 113.71m, 2x1024 dense layers with relu and he_kernel, filter 31x31, 0.3 dropout + dense dropout 0.25, 512*8 in fit
