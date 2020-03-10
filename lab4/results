@@ -42,3 +42,10 @@ google collab, - 1000 epochs 0.659 acc, loss ~0.18, 57.6m, 2x1024 dense layers w
 google collab, - 1000 epochs 0.55 acc, loss ~2.15, 111.64m, 2x1024 dense layers with relu and he_kernel, filter 51x51, 0.3 dropout + dense dropout 0.25, 512*8 in fit
 google collab, - 1000 epochs 0.651 acc, loss ~0.38, 83.21m, 2x1024 dense layers with relu and he_kernel, filter 41x41, 0.3 dropout + dense dropout 0.25, 512*8 in fit
 google collab, - 2000 epochs 0.656 acc, loss ~0.05, 113.71m, 2x1024 dense layers with relu and he_kernel, filter 31x31, 0.3 dropout + dense dropout 0.25, 512*8 in fit
+google collab, - 5000 epochs 0.68 acc, loss ~0.12, 280.40m, 5x1024 dense layers with relu and he_kernel, filter 31x31, 0.4 dropout + dense dropout 0.4, 512*8 in fit
+
+google colab - 100 epochs, 47 acc, loss ~3.32, 6.21m, filter 31x31, dropout 0.2, 0.25, 0.25, 0.3, 0.5, 0.5, 0.5, 0.5
+google colab - 100 epochs, 46 acc, loss ~3.37, 6.34m, filter 31x31, dropout 0.2, 0.25, 0.25, 0.25, 0.25, 0.3, 0.3, 0.5
+google colab - 100 epochs, 51 acc, loss ~3.12, 6.3m, filter 31x31, dropout 0.2, 0.25, 0.3, 0.4, 0.5, 0.5, 0.5, 0.5
+google colab - 100 epochs, 46 acc, loss ~1.6, 3.14m, filter 3x3, dropout 0.2, 0.25, 0.3, 0.4, 0.5, 0.5, 0.5, 0.5
+google colab - 1000 epochs, 68 acc, loss ~0.20, 56.48m, filter 31x31, dropout 0.2, 0.25, 0.3, 0.4, 0.5, 0.5, 0.5, 0.5
