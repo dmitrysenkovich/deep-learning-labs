@@ -1,0 +1,9 @@
+no augmentation 200 val 1 test 0.98842716
+gaussian noise 200 val 1 test 0.9928889
+horizontal 200 val 0.9999249 test 0.9956776
+vertical 200 val 1 test 0.98535967
+
+vgg16 no augmentation 200 val 1 test 0.9997211
+vgg16 gaussian noise 200 val 1 test 0.99707156
+vgg16 horizontal 200 val 1 test 1
+vgg16 vertical 200 val 1 test 0.9997211
