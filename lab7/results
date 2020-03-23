@@ -1,0 +1,29 @@
+0.84627384 100 epochs lstm 1x 128 dropout 0.2 dense 1x 128 dropout 0.2
+0.84631383 100 epochs lstm 1x 128 dropout 0.2 dense 1x 128 dropout 0.5
+0.8401136 100 epochs lstm 1x 128 dropout 0.2 dense 1x 256 dropout 0.5
+0.84859395 100 epochs lstm 1x 128 dropout 0.2 dense 1x 512 dropout 0.5
+0.84899396 100 epochs lstm 1x 128 dropout 0.2 dense 1x 1024 dropout 0.5
+0.8408336 100 epochs lstm 1x 256 dropout 0.2 dense 1x 1024 dropout 0.5
+0.84667385 100 epochs lstm 1x 256 dropout 0.3 dense 1x 1024 dropout 0.5
+0.849914 100 epochs lstm 1x 256 dropout 0.4 dense 1x 1024 dropout 0.5
+0.8471939 100 epochs lstm 1x 256 dropout 0.5 dense 1x 1024 dropout 0.5
+0.850314 100 epochs lstm 1x 256 dropout 0.6 dense 1x 1024 dropout 0.5
+0.85627425 100 epochs lstm 1x 256 dropout 0.7 dense 1x 1024 dropout 0.5
+0.87071484 100 epochs lstm 2x 256 dropout 0.7 dense 1x 1024 dropout 0.5
+0.8633545 100 epochs lstm 2x 256 dropout 0.5 dense 1x 1024 dropout 0.5
+0.8653546 100 epochs lstm 2x 256 dropout 0.5 dense 2x 1024 dropout 0.5
+0.8118725 100 epochs lstm 2x 256 dropout 0.5 dense 2x 1024 dropout 0.5 1x conv1d 32 filters 1 strides
+0.8158726 100 epochs lstm 2x 256 dropout 0.5 dense 2x 1024 dropout 0.5 1x conv1d 64 filters 1 strides
+0.81327254 100 epochs lstm 2x 256 dropout 0.5 dense 2x 1024 dropout 0.5 1x conv1d 128 filters 1 strides
+0.8697354 100 epochs lstm 2x 256 dropout 0.5 dense 2x 1024 dropout 0.5 1x conv1d 128 filters 1 strides after LSTM
+0.8685382 100 epochs lstm 2x 256 dropout 0.5 dense 2x 1024 dropout 0.5 1x conv1d 128 filters 1 strides after LSTM kernel 10
+0.8643458 100 epochs lstm 2x 256 dropout 0.5 dense 2x 1024 dropout 0.2 1x conv1d 128 filters + normalization + MaxPooling1D after LSTM kernel 11
+0.86050564 100 epochs lstm 1x 256 dropout 0.5 dense 2x 1024 dropout 0.2 1x conv1d 128 filters + normalization + MaxPooling1D after LSTM kernel 11 x6 speed
+0.8623651 100 epochs lstm 1x 256 dropout 0.5 dense 2x 1024 dropout 0.3 1x conv1d 48 filters + normalization + MaxPooling1D after LSTM kernel 11 x6 speed
+0.8650346 100 epochs lstm 1x 256 dropout 0.5 dense 2x 1024 conv1d many layers
+0.8557542 200 epochs lstm 1x 256 dropout 0.5 dense 2x 1024 conv1d many layers
+0.85955435 200 epochs lstm 1x 256 dropout 0.7 dense 2x 1024 conv1d many layers
+0.85623425 300 epochs lstm 1x 256 dropout 0.7 dense 2x 1024 conv1d many layers
+0.8460338 300 epochs lstm 1x 256 dropout 0.4 dense 2x 1024 conv1d many layers
+0.8527141 200 epochs lstm 1x 512 dropout 0.5 dense 2x 1024 conv1d many layers
+0.8627545 200 epochs lstm 2x 512 dropout 0.5 dense 2x 1024 conv1d many layers
