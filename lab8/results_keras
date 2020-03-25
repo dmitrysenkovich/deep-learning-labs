@@ -1,0 +1,23 @@
+shuffle
+5 window 50 epochs 0.148253 m 6458.7153 mse 2x lstm 64 neurons
+500 window 100 epochs 1.650468 m 5230.7153 mse 2x lstm 64 neurons
+500 window 500 epochs 7.883996 m 4297.8765 mse 2x lstm 64 neurons
+500 window 100 epochs 2.816870 m 4938.982 mse 2x lstm 128 neurons
+500 window 100 epochs 2.816870 m 4938.982 mse 2x lstm 128 neurons dropout 0.2 - 20s batch
+500 window 100 epochs 2.919904 m 4467.8706 mse 2x lstm 128 neurons dense 128
+500 window 100 epochs 2.949732 m 4407.095 mse 2x lstm 128 neurons dense 256
+500 window 100 epochs 3.050477 m 3991.2312 mse 2x lstm 128 neurons dense 256 dropout 0.1
+500 window 100 epochs 3.045684 m 5156.517 mse 2x lstm 128 neurons dense 256 dropout 0.2
+500 window 100 epochs 3.236610 m 5135.9834 mse 2x lstm 128 neurons 2x dense 256 dropout 0.1
+500 window 100 epochs 5.392015 m 4611.9653 mse 2x lstm 128 neurons 2x dense 256 dropout 0.3
+500 window 100 epochs 2.868032 m 4960.906 mse 2x lstm 128 neurons conv1d
+500 window 100 epochs 3.074166 m 4532.114 mse 2x lstm 128 neurons conv1d dense 256 dropout 0.1
+no shuffle
+500 window 100 epochs 2.954163 m 1177.5872 mse 2x lstm 128 neurons dense 128 dropout 0.1
+132 window 100 epochs 1.000279 m 1082.2963 mse convd1 2x lstm 128 neurons dense 32 dense 16
+64 window 100 epochs 0.586677 m 695.42096 mse convd1 2x lstm 128 neurons dense 32 dense 16
+48 window 100 epochs 0.501789 m 561.039 mse convd1 2x lstm 128 neurons dense 32 dense 16
+32 window 100 epochs 0.378648 m 726.0093 mse convd1 64 2x lstm 128 neurons dense 32 dense 16
+48 window 100 epochs 0.989848 m 1065.1915 mse convd1 256 2x lstm 256 neurons dense 256 dense 128
+48 window 100 epochs 1.087953 m 586.39777 mse convd1 256 2x lstm 256 neurons dropout 0.2 dense 256 dropout 0.1 dense 128 dropout 0.1
+34 window 200 epochs 0.950076 m 486.08856 mse convd1 128 2x lstm 128 neurons dropout 0.2 dense 256 dropout 0.2 dense 128 dropout 0.2
